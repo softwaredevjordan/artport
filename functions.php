@@ -31,13 +31,13 @@ function server_side_ajax() {
     $html = '';
 
     if($clicked == 'artist'){
-        $args = array('ink','sketches');
+        $args = array('art','concepts');
     }
-    else if($clicked == 'ink'){
-        $args = array('ink');
+    else if($clicked == 'art'){
+        $args = array('art');
     }
-    else if($clicked == 'drawings'){
-        $args = array('sketches');
+    else if($clicked == 'concepts'){
+        $args = array('concepts');
     }
     
     $wpq = new WP_Query(array(
@@ -65,32 +65,32 @@ add_action('wp_ajax_server_side_ajax', 'server_side_ajax');
 add_action('wp_ajax_nopriv_server_side_ajax', 'server_side_ajax' ); 
 
 function tatPort_post_types() {
-    register_post_type('sketches', array(
+    register_post_type('concepts', array(
         'show_in_rest' => true,
         'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
-        'rewrite' => array('slug' => 'sketches'),
+        'rewrite' => array('slug' => 'concepts'),
         'public' => true,
         'labels' => array(
-          'name' => 'Sketches',
-          'add_new_item' => 'Add New Sketch',
-          'edit_item' => 'Edit Sketch',
-          'all_items' => 'All Sketches',
-          'singular_name' => 'sketch'
+          'name' => 'Concepts',
+          'add_new_item' => 'Add New Concept',
+          'edit_item' => 'Edit Concept',
+          'all_items' => 'All Concepts',
+          'singular_name' => 'Concept'
         ),
         'menu_icon' => 'dashicons-edit-large'
     ));
 
-    register_post_type('ink', array(
+    register_post_type('art', array(
       'show_in_rest' => true,
       'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
-      'rewrite' => array('slug' => 'ink'),
+      'rewrite' => array('slug' => 'Art'),
       'public' => true,
       'labels' => array(
-        'name' => 'Ink',
-        'add_new_item' => 'Add New Ink',
-        'edit_item' => 'Edit Ink',
-        'all_items' => 'All Ink',
-        'singular_name' => 'Ink'
+        'name' => 'Art',
+        'add_new_item' => 'Add New Art',
+        'edit_item' => 'Edit Art',
+        'all_items' => 'All Art',
+        'singular_name' => 'Art'
       ),
       'menu_icon' => 'dashicons-admin-customizer'
   ));

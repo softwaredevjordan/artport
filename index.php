@@ -7,7 +7,7 @@ get_header();
         
         $mainLoop = new WP_Query(array(
             'post_per_page' => -1,
-            'post_type' => array('ink','sketches')
+            'post_type' => array('art','concepts')
         ));
     
         while($mainLoop->have_posts()) {

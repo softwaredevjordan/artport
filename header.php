@@ -17,10 +17,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav d-inline-flex" id=''>
                 <li class="nav-item active ">
-                    <a class="nav-link headerLink" id='drawings' href="#">Drawings<span class="sr-only">(current)</span></a>
+                    <a class="nav-link headerLink" id='concepts' href="#">Concepts<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active ">
-                    <a class="nav-link headerLink" id='ink' href="#">Ink<span class="sr-only">(current)</span></a>
+                    <a class="nav-link headerLink" id='art' href="#">Art<span class="sr-only">(current)</span></a>
                 </li>
                 </ul>  
                 
