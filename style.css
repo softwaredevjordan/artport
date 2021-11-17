@@ -95,12 +95,19 @@ footer p{
     width: 300px;
     height: 150px;
     overflow: hidden;
+    box-shadow: 7px 7px 2px;
     
 }
 .post img {
     width: 300px;
     height: 150px;
-    
+
+}
+
+.post button{
+    background: transparent;
+    border: none;
+    padding: 0px;
 }
 
 .post img:hover {
