@@ -38,7 +38,8 @@ svg{
 }
 
 
-.socialmedia #facebook:hover{
+
+.socialmedia-facebook a:hover{
     fill:#4267B2;
     transition: .2s  ;
     -webkit-transition: .2s  ;
@@ -48,7 +49,7 @@ svg{
 }
 
 
-.socialmedia #instagram:hover{
+.socialmedia-instagram a:hover{
     fill:#833AB4;
     transition: .2s  ;
     -webkit-transition: .2s  ;
@@ -134,7 +135,11 @@ footer p{
     margin: 35px
 }
 
-
+/* modal*/
+.social-modal{
+    position: absolute;
+    bottom: 5%;
+}
 .loop{
     display: flex;
     flex-direction: row;
